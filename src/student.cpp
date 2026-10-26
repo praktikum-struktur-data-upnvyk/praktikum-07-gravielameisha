@@ -71,7 +71,7 @@ void preorder(const Node* root) {
         return;
     }
 
-    cout << root->data << " - ";
+    cout << root->data << " ";
     preorder(root->left);
     preorder(root->right);
 }
@@ -102,7 +102,7 @@ void inorder(const Node* root) {
     }
 
     inorder(root->left);
-    cout << root->data << " - ";
+    cout << root->data << " ";
     inorder(root->right);
 }
 
@@ -134,7 +134,7 @@ void postorder(const Node* root) {
 
     postorder(root->left);
     postorder(root->right);
-    cout << root->data << " - ";
+    cout << root->data << " ";
 
 }
 
